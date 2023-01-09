@@ -12,11 +12,11 @@ let availableQuestions = []
 
 let questions = [
     {
-        question: 'what is 2+2',
+        question: 'How many legs do cats have?',
         choice1: '2',
         choice2: '4',
         choice3: '5',
-        choice4: '19',
+        choice4: '1',
         answer: 2,
 
     },
@@ -30,30 +30,30 @@ let questions = [
 
     },
     {
-        question: 'What is 5+5',
-        choice1: '19',
-        choice2: '5',
-        choice3: '10',
-        choice4: '20',
+        question: 'Whats the largest state in the US?',
+        choice1: 'Texas',
+        choice2: 'Flordia',
+        choice3: 'Alaska',
+        choice4: 'Hawaii',
         answer: 3,
 
     },
     {
-        question: 'what is 2+8',
-        choice1: '2',
-        choice2: '4',
-        choice3: '5',
-        choice4: '10',
-        answer: 4,
+        question: 'How many states are in the US?',
+        choice1: '45',
+        choice2: '50',
+        choice3: '40',
+        choice4: '51',
+        answer: 2,
 
     },
     {
-        question: 'what is 2+9',
-        choice1: '11',
-        choice2: '10',
-        choice3: '9',
-        choice4: '19',
-        answer: 2,
+        question: 'What city in the US has the largest building?',
+        choice1: 'Miami',
+        choice2: 'Chicago',
+        choice3: 'New York',
+        choice4: 'Seattle',
+        answer: 3,
 
     }
 ]
@@ -72,7 +72,7 @@ getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS){
         localStorage.setItem('mostRecentScore', score)
 
-        return window.location.assign("/end.html")
+        return window.location.assign("end.html")
     }
 
     questionCounter++
