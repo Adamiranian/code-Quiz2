@@ -10,3 +10,4 @@ This project allows the user to play a short quiz and save there score. You can 
 Adam Iranian 
 
 ## license 
+MIT License
